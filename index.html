@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <span class="nav-logo">SHIMOJI HINAKO　PortFolio</span>
+  </nav>
+
+  <div class="hero">
+    <p class="hero-tag">PortFolio</p>
+    <h1>Designing<br>with intent.</h1>
+    <div class="hero-btns">
+      <button class="btn-secondary" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">About</button>
+      <button class="btn-primary" onclick="document.getElementById('works').scrollIntoView({behavior:'smooth'})">View Works</button>
+    </div>
+  </div>
+  <section class="section" id="about">
+    <p class="section-label">About</p>
+  
+  <section class="section" id="profile">
+  <p class="section-label">Profile</p>
+  <div class="profile-grid">
+    <div class="profile-photo">
+      <img class="profile-avatar" src="images/hinako.png" alt="下地ひな子">
+    </div>
+    <div class="profile-info">
+      <table class="profile-table">
+        <tr>
+          <td class="profile-key">Name</td>
+          <td class="profile-val">下地 ひな子</td>
+        </tr>
+        <tr>
+          <td class="profile-key">Birthday</td>
+          <td class="profile-val">平成11年11月11日</td>
+        </tr>
+        <tr>
+          <td class="profile-key">Hobby</td>
+          <td class="profile-val">バスケ観戦・モルック・カラオケ</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+      <div>
+        <p class="skills-heading">Skills</p>
+        <div class="skills-list">
+          <span class="skill-tag">Photoshop</span>
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">Exel</span>
+          <span class="skill-tag">WEBクリエイター検定エキスパート</span>
+          <span class="skill-tag">歯科衛生士免許</span>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="section" id="career">
+    <section class="career-section">
+      <h2>経歴</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <p class="timeline-date">2021年4月 〜 2024年10月</p>
+          <div class="timeline-card">
+            <h3>歯科衛生士として勤務</h3>
+            <p class="company">駒沢パークサイド歯科口腔外科</p>
+            <p>小児歯科から口腔外科まで幅広い診療科目を経験しました。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <p class="timeline-date">2024年12月 〜 2025年2月</p>
+          <div class="timeline-card">
+            <h3>職業訓練校に入校</h3>
+            <p class="company">サイテクカレッジ普天間校</p>
+            <p>職業訓練「WEBクリエイター実践科コース」を3ヶ月受講。バナー・Webサイト制作、資格取得の学習を通しデザインの基礎知識からコーディングまで幅広く習得しました。</p>
+            <div class="tag-list">
+              <span class="tag">Illustrator</span>
+              <span class="tag">Photoshop</span>
+              <span class="tag">Figma</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <p class="timeline-date">2025年3月 〜 2026年5月</p>
+          <div class="timeline-card">
+            <h3>広告オペレーターとして勤務</h3>
+            <p class="company">株式会社シーエーアドバンス</p>
+            <p>サイバーエージェントの子会社として大規模な広告運用のオペレーション部に配属され、社内ツールの更新運用や広告レポートの作成を担当しておりました。</p>
+            <div class="tag-list">
+              <span class="tag">Exel</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </section>
+
+
+  <section class="section" id="works">
+    <p class="section-label">バナー制作</p>
+
+    <div class="works-grid">
+      <div class="work-card" onclick="openWorkModal(this)"
+        data-img="images/port1.png"
+        data-title="キリン 午後の紅茶 — チョコレートティーラテ"
+        data-sub="バナーデザイン &nbsp;·&nbsp; 2024"
+        data-desc="冬季限定なので暖かくて濃厚なチョコレートの質感を背景にし、期間限定や値段などの情報を目立ちやすく、全体の色味を崩さないようにデザインしました。">
+        <img src="images/port1.png" alt="キリン 午後の紅茶 チョコレートティーラテ">
+        <div class="work-overlay">
+          <p class="work-title">キリン 午後の紅茶 — チョコレートティーラテ</p>
+          <p class="work-sub">バナーデザイン &nbsp;·&nbsp; 2025</p>
+        </div>
+      </div>
+      <div class="work-card" onclick="openWorkModal(this)"
+        data-img="images/port2.png"
+        data-title="花王 バブ — ミモザ・サクラの香り"
+        data-sub="バナーデザイン &nbsp;·&nbsp; 2025"
+        data-desc="春らしいミモザとサクラの香りを、やさしいパステルカラーで表現しました。20代〜30代女性に受けるように効果の宣伝よりも画像として可愛いデザインにしました。">
+        <img src="images/port2.png" alt="花王 バブ — ミモザ・サクラの香り">
+        <div class="work-overlay">
+          <p class="work-title">花王 バブ — ミモザ・サクラの香り</p>
+          <p class="work-sub">バナーデザイン &nbsp;·&nbsp; 2025</p>
+        </div>
+      </div>
+      <div class="work-card" onclick="openWorkModal(this)"
+        data-img="images/port3.png"
+        data-title="COCO CHOU CHOU — ヴィーガン生チョコ（横長）"
+        data-sub="バナーデザイン &nbsp;·&nbsp; 2025"
+        data-desc="ヴィーガン素材へのこだわりと商品のビジュアルの綺麗さ、高級感が伝わるように意識しました。左側に大きい商品名やアクセントカラーを用いた情報を置いて視線を左から右に、情報を順番にキャッチできるようにしました。">
+        <img src="images/port3.png" alt="COCO CHOU CHOU — ヴィーガン生チョコ（横長）">
+        <div class="work-overlay">
+          <p class="work-title">COCO CHOU CHOU — ヴィーガン生チョコ（横長）</p>
+          <p class="work-sub">バナーデザイン &nbsp;·&nbsp; 2025</p>
+        </div>
+      </div>
+      <div class="work-card" onclick="openWorkModal(this)"
+        data-img="images/port4.png"
+        data-title="COCO CHOU CHOU — ヴィーガン生チョコ（正方形）"
+        data-sub="バナーデザイン &nbsp;·&nbsp; 2025"
+        data-desc="COCO CHOU CHOU — ヴィーガン生チョコ（横長）と同じ情報を入れるために全体のサイズ感、全ての情報が見やすくなるような配置を意識してデザインしました。">
+        <img src="images/port4.png" alt="COCO CHOU CHOU — ヴィーガン生チョコ（正方形）">
+        <div class="work-overlay">
+          <p class="work-title">CCOCO CHOU CHOU — ヴィーガン生チョコ（正方形）</p>
+          <p class="work-sub">バナーデザイン &nbsp;·&nbsp; 2025</p>
+        </div>
+      </div>
+      <div class="work-card" onclick="openWorkModal(this)"
+        data-img="images/port5.png"
+        data-title="振袖専門店のSNS広告画像"
+        data-sub="バナーデザイン &nbsp;·&nbsp; 2025"
+        data-desc="指定の色（ゴールド）や雰囲気に合わせて高級感を出すように意識しました。インスタストーリー広告なのでパッと目に入るように少し派手なデザインをしました。">
+        <img src="images/port5.png" alt="振袖専門店のSNS広告画像">
+        <div class="work-overlay">
+          <p class="work-title">振袖専門店のSNS広告画像</p>
+          <p class="work-sub">SNS広告デザイン &nbsp;·&nbsp; 2025</p>
+        </div>
+      </div>
+      <div class="work-card" onclick="openWorkModal(this)"
+        data-img="images/port6.png"
+        data-title="振袖専門店のSNS広告画像"
+        data-sub="バナーデザイン &nbsp;·&nbsp; 2025"
+        data-desc="新春、おめでたい感じを出したかったので和柄の背景に梅の花を配置し、カラーは暖色を使用しました。">
+        <img src="images/port6.png" alt="振袖専門店のSNS広告画像">
+        <div class="work-overlay">
+          <p class="work-title">振袖専門店のSNS広告画像</p>
+          <p class="work-sub">SNS広告デザイン &nbsp;·&nbsp; 2025</p>
+        </div>
+      </div>
+      <div class="work-card" onclick="openWorkModal(this)"
+        data-img="images/port7.png"
+        data-title="社内展示用ポスター"
+        data-sub="ポスターデザイン &nbsp;·&nbsp; 2025"
+        data-desc="カラーが原色だらけなので必要な情報を見やすくするようにシャドウやフォントサイズを意識しました。">
+        <img src="images/port7.png" alt="社内展示用ポスター">
+        <div class="work-overlay">
+          <p class="work-title">社内展示用ポスター</p>
+          <p class="work-sub">ポスターデザイン &nbsp;·&nbsp; 2025</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="section" id="video-works">
+    <p class="section-label">動画制作</p>
+
+    <div class="works-grid video-works-grid">
+      <div class="work-card video-work-card" onclick="openVideoModal(this)"
+        data-video="movies/-5314340254989733052______________________________.MP4"
+        data-title="動画実績 1"
+        data-sub="動画制作 &nbsp;·&nbsp; 2025"
+        data-desc="AIを使用の指定があったのでメンバーの特徴をAIで生成させました。某映画のパロディで少女が見ている夢の中でメンバー達が目標を叶いていく理想（夢）を見ている。というストーリーにしました。">
+        <video src="movies/-5314340254989733052______________________________.MP4" muted loop autoplay playsinline preload="metadata"></video>
+        <div class="work-overlay">
+          <p class="work-title">動画制作</p>
+          <p class="work-sub">動画デザイン &nbsp;·&nbsp; 2025</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="work-modal" id="video-modal" onclick="closeVideoModal(event)">
+    <div class="work-modal-inner">
+      <button class="work-modal-close" onclick="closeVideoModal(event)" aria-label="閉じる">&times;</button>
+      <video class="work-modal-img" id="video-modal-video" src="" controls></video>
+      <div class="work-modal-info">
+        <p class="work-modal-title" id="video-modal-title"></p>
+        <p class="work-modal-sub" id="video-modal-sub"></p>
+        <p class="work-modal-desc" id="video-modal-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="work-modal" id="work-modal" onclick="closeWorkModal(event)">
+    <div class="work-modal-inner">
+      <button class="work-modal-close" onclick="closeWorkModal(event)" aria-label="閉じる">&times;</button>
+      <img class="work-modal-img" id="work-modal-img" src="" alt="">
+      <div class="work-modal-info">
+        <p class="work-modal-title" id="work-modal-title"></p>
+        <p class="work-modal-sub" id="work-modal-sub"></p>
+        <p class="work-modal-desc" id="work-modal-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>©hinakodesign</p>
+  </footer>
+
+  <script>
+    function openWorkModal(card) {
+      document.getElementById('work-modal-img').src = card.dataset.img;
+      document.getElementById('work-modal-title').textContent = card.dataset.title;
+      document.getElementById('work-modal-sub').innerHTML = card.dataset.sub;
+      document.getElementById('work-modal-desc').textContent = card.dataset.desc;
+      document.getElementById('work-modal').classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeWorkModal(event) {
+      if (event.target.closest('.work-modal-inner') && !event.target.classList.contains('work-modal-close')) return;
+      document.getElementById('work-modal').classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
+    function openVideoModal(card) {
+      var video = document.getElementById('video-modal-video');
+      video.src = card.dataset.video;
+      document.getElementById('video-modal-title').textContent = card.dataset.title;
+      document.getElementById('video-modal-sub').innerHTML = card.dataset.sub;
+      document.getElementById('video-modal-desc').textContent = card.dataset.desc;
+      document.getElementById('video-modal').classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+      video.play();
+    }
+    function closeVideoModal(event) {
+      if (event.target.closest('.work-modal-inner') && !event.target.classList.contains('work-modal-close')) return;
+      var video = document.getElementById('video-modal-video');
+      video.pause();
+      video.currentTime = 0;
+      document.getElementById('video-modal').classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        document.getElementById('work-modal').classList.remove('is-open');
+        document.getElementById('video-modal').classList.remove('is-open');
+        document.getElementById('video-modal-video').pause();
+        document.body.style.overflow = '';
+      }
+    });
+  </script>
+
+</body>
+</html>
