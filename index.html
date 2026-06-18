@@ -186,6 +186,18 @@
           <p class="work-sub">ポスターデザイン &nbsp;·&nbsp; 2025</p>
         </div>
       </div>
+      <div class="work-card" onclick="openWorkModal(this)"
+        data-img="images/port8.png"
+        data-title="このポートフォリオサイト"
+        data-sub="Webサイト制作 &nbsp;·&nbsp; 2026"
+        data-desc="このポートフォリオサイト自体もHTML・CSS・JavaScriptで制作しました。シンプルで見やすいレイアウトと、実績画像をモーダルで拡大表示できるUIを意識しました。"
+        data-link="https://tmprkidz.github.io/portfolio/">
+        <img src="images/port8.png" alt="このポートフォリオサイトのスクリーンショット">
+        <div class="work-overlay">
+          <p class="work-title">このポートフォリオサイト</p>
+          <p class="work-sub">Webサイト制作 &nbsp;·&nbsp; 2026</p>
+        </div>
+      </div>
     </div>
 
   </section>
@@ -229,6 +241,7 @@
         <p class="work-modal-title" id="work-modal-title"></p>
         <p class="work-modal-sub" id="work-modal-sub"></p>
         <p class="work-modal-desc" id="work-modal-desc"></p>
+        <a class="work-modal-link" id="work-modal-link" href="#" target="_blank" rel="noopener">サイトを見る →</a>
       </div>
     </div>
   </div>
@@ -243,6 +256,13 @@
       document.getElementById('work-modal-title').textContent = card.dataset.title;
       document.getElementById('work-modal-sub').innerHTML = card.dataset.sub;
       document.getElementById('work-modal-desc').textContent = card.dataset.desc;
+      var link = document.getElementById('work-modal-link');
+      if (card.dataset.link) {
+        link.href = card.dataset.link;
+        link.style.display = 'inline-block';
+      } else {
+        link.style.display = 'none';
+      }
       document.getElementById('work-modal').classList.add('is-open');
       document.body.style.overflow = 'hidden';
     }
