@@ -209,6 +209,26 @@
 
   </section>
 
+  <section class="section" id="web-works">
+    <p class="section-label">Webサイト制作</p>
+
+    <div class="works-grid">
+      <div class="work-card" onclick="openWorkModal(this)"
+        data-img="images/port9.png"
+        data-title="信州渋温泉 — 観光案内サイト"
+        data-sub="Webサイト制作 &nbsp;·&nbsp; 2026"
+        data-desc="信州渋温泉の魅力を伝える観光案内サイトです。九湯巡りや周辺のお店、アクセスなどの情報を、温泉街の雰囲気が伝わる写真とともに見やすく構成しました。"
+        data-link="https://tmprkidz.github.io/shibuonsen/">
+        <img src="images/port9.png" alt="信州渋温泉 観光案内サイト">
+        <div class="work-overlay">
+          <p class="work-title">信州渋温泉 — 観光案内サイト</p>
+          <p class="work-sub">Webサイト制作 &nbsp;·&nbsp; 2026</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
   <div class="work-modal" id="video-modal" onclick="closeVideoModal(event)">
     <div class="work-modal-inner">
       <button class="work-modal-close" onclick="closeVideoModal(event)" aria-label="閉じる">&times;</button>
@@ -229,6 +249,7 @@
         <p class="work-modal-title" id="work-modal-title"></p>
         <p class="work-modal-sub" id="work-modal-sub"></p>
         <p class="work-modal-desc" id="work-modal-desc"></p>
+        <a class="work-modal-link" id="work-modal-link" href="#" target="_blank" rel="noopener">サイトを見る →</a>
       </div>
     </div>
   </div>
@@ -243,6 +264,13 @@
       document.getElementById('work-modal-title').textContent = card.dataset.title;
       document.getElementById('work-modal-sub').innerHTML = card.dataset.sub;
       document.getElementById('work-modal-desc').textContent = card.dataset.desc;
+      var link = document.getElementById('work-modal-link');
+      if (card.dataset.link) {
+        link.href = card.dataset.link;
+        link.style.display = 'inline-block';
+      } else {
+        link.style.display = 'none';
+      }
       document.getElementById('work-modal').classList.add('is-open');
       document.body.style.overflow = 'hidden';
     }
